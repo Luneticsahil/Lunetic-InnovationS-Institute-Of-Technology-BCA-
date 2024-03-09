@@ -1,0 +1,952 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.header{
+	background-color: black;
+	z-index: 1;
+	
+}
+
+.firstn{
+	min-height:60vh;
+	width:100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/image6.jpg");
+	background-position:center;
+	background-size:cover;
+	text-align: center;
+	padding-top: 100px;
+	color: #f19ac6;
+	
+}
+
+.firstn p{
+	color: #f19ac6;
+}
+
+
+nav{
+	display:flex;
+	padding:2% 6%;
+	justify-content:space-between;
+	
+	
+}
+
+nav img{
+	width:30px;
+}
+
+.nav-links{
+	flex:1;
+	text-align:right;
+}
+
+.nav-links ul li{
+	list-style:none;
+	display:inline-block;
+	padding:8px 12px;
+	position:relative;
+}
+
+.nav-links ul li a{
+	color:pink;
+	text-decoration:none;
+	font-size:15px;
+}
+	
+nav h2{
+  color:pink;
+
+}  
+
+.nav-links ul li a:hover {
+    color: #ff8c00; /* Change to your desired hover color */
+    transition: color 0.3s ease;
+}
+
+
+/* Add the following styles for the dropdown menu */
+.nav-links ul li {
+  position: relative;
+}
+
+.nav-links ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #333;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-links ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-links ul ul li {
+  display: block;
+  width: 150px;
+  text-align: left;
+  padding: 10px;
+}
+
+.nav-links ul ul li a {
+  color: #fff;
+}
+
+/* Optional: Style the dropdown link on hover */
+.nav-links ul ul li:hover {
+  background-color: #555;
+}
+
+
+.text-box{
+	width:90%;
+	color:pink;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+
+.text-box h1{
+	font-size:40px;
+}
+
+.text-box p{
+	margin:10px 0 40px;
+    font-size:16px;
+	color:pink;
+}
+
+
+/* Notice Section  */
+
+
+
+.bar{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+	background-color: #f4976c;
+	
+}
+
+
+p{
+	color:black;
+	font-size:14px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+}
+
+.row1{
+	width:80%;
+	margin-top:5%;
+	display:flex;
+	justify-content:space-between;
+	margin-left:120px;
+    height: 70vh;
+}
+
+.bar-col{
+	flex-basis:31%;
+	background:#fff3f3;
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	transition:0.5s;
+	overflow-y: scroll;
+}
+
+h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+	
+}
+
+.notice{
+	display:inline-block;
+	text-decoration:none;
+	background:transparent;
+	color:#fff;
+	border:1px solid #fff;
+	padding:12px 34px;
+	font-size:13px;
+	position:relative;
+	cursor:pointer;
+	margin-bottom:30px;
+}
+
+
+
+.notice:hover{
+	border: 1px solid ;
+	background: #d6e0ff;
+	transition: 0.5s;
+	color:black;
+}
+	
+
+
+/* Courses Section  */
+
+
+
+
+.Courses{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+	background-color: #3aafa9;
+}
+
+h1{
+	font-size:36px;
+	font-weight:600;
+}
+
+p{
+	color:black;
+	font-size:14px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+}
+
+.row{
+	width:80%;
+	margin-top:5%;
+	display:flex;
+	justify-content:space-between;
+	margin-left:120px;
+	
+}
+
+.course-col{
+	flex-basis:31%;
+	background:#fff3f3;
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	transition:1s;
+	
+}
+
+
+.Courses h1{
+	color:#303c6c;
+	border: 2px solid ;
+	padding:12px 34px;
+	display:inline-block;
+	border-radius: 10px;
+}
+
+
+h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+}
+
+.course-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+	background:#d6e0ff;
+	transform:scale(1.1);
+}
+
+.course-col img{
+	width:100%;
+	display:block;
+	border-radius:25px;
+  height: 220px;
+}
+
+
+.allCourse{
+	display:inline-block;
+	text-decoration:none;
+	background:transparent;
+	color:#fff;
+	border:1px solid #fff;
+	padding:12px 34px;
+	font-size:13px;
+	position:relative;
+	cursor:pointer;
+	margin-bottom:30px;
+}
+
+
+
+.allCourse:hover{
+	border: 1px solid;
+	background: #d6e0ff;
+	transition:0.5s;
+	color:black;
+}
+
+
+
+
+
+/* Campus Section  */
+
+
+
+
+
+
+.campus{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	padding-top:50px;
+	background-color: #f4976c;
+}
+
+.campus h1{
+	color:#fbe8a6;
+	border: 2px solid ;
+	padding:12px 34px;
+	display:inline-block;
+	border-radius: 10px;
+}
+
+.campus-col{
+	
+	flex-basis:32%;
+	border-radius: 10px;
+	margin-bottom:5%;
+	position: relative;
+	overflow:hidden;
+	padding: 20px 14px;
+	
+	
+}
+
+.campus-col img{
+	
+	width:90%;
+	display:block;
+	border-radius:15px;
+	border: 1px solid #fff;
+	transition:1s;
+}
+
+.campus-col img:hover{
+	box-shadow: 0 0 50px 5px rgba(4,9,30,0.7);
+	transform:scale(1.1);
+	border: 1px solid #fff;
+	z-index:2;
+}
+
+
+.campus-col h3{
+	margin-top:16px;
+	margin-bottom:15px;
+	text-align:center;
+	color:#fbe8a6;
+	border: 2px solid ;
+	padding:10px 25px;
+	display:inline-block;
+	border-radius: 10px;
+	margin-right:20px;
+	
+}
+
+.SeeMore{
+	display:inline-block;
+	text-decoration:none;
+	background:transparent;
+	color:#fff;
+	border:1px solid #fff;
+	padding:12px 34px;
+	font-size:13px;
+	position:relative;
+	cursor:pointer;
+	margin-bottom:30px;
+}
+
+
+
+.SeeMore:hover{
+	border: 1px solid ;
+	background: #d6e0ff;
+	transition: 0.5s;
+	color:black;
+}
+
+
+
+
+/* Footer Section  */
+
+
+
+
+
+.footer {
+    background-color:rgb(47, 46, 46);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+.icons {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.icons img {
+    width: 25px;
+    padding: 8px;
+}
+
+
+
+
+
+
+/* Courses page 2 Section  */
+
+
+.Registration {
+    display: inline-block;
+    text-decoration: none;
+    background: red;
+    color: #fff;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    cursor: pointer;
+    bottom: 0;
+}
+
+.Registration:hover {
+    border: 1px solid;
+    background: orange;
+    transition: 0.5s;
+    color: black;
+}
+
+
+
+
+
+/* about,campus page 2 Section  */
+
+.intro{
+	
+	color:pink;
+	text-align:center;
+}
+
+.campus1 {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #2d5b89;
+  
+  overflow: hidden;
+}
+
+
+.campus1 h1 {
+  color: pink;
+  border: 2px solid;
+  padding: 12px 34px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.row1 {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  /* Scroll 4 images at a time */
+  flex: 0 0 100%; /* 100% means 4 images */
+  animation: scroll 5s linear infinite;
+}
+
+.campus-col1 {
+  flex: 0 0 25%; /* Display 4 images at a time */
+  overflow: hidden;
+  perspective: 500px;
+}
+
+.campus-col1 img {
+  width: 95%;
+  display: block;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  transition:transform 1s;
+  height: 230px;
+  
+}
+
+.campus-col1 img:hover {
+  
+  transform:translateZ(20px);
+}
+
+.campus-col1 h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: pink;
+  border: 2px solid;
+  padding: 6px 10px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slider {
+  animation: scroll 80s linear infinite;
+  animation-timing-function: linear;
+  display: flex;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+/* about,Facility page 2 Section  */
+
+
+
+
+.Faculty h1{
+	
+	color:pink;
+	border: 2px solid pink;
+	padding: 12px 34px;
+   display: inline-block;
+   border-radius: 10px;
+   
+}
+
+.Faculty{
+	
+	width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #2d5b89;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/* Result Section  */
+
+
+
+
+
+.result{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+	background-color: #f19ac6;
+	
+}
+
+.result h1 {
+	color: #1e294c;
+	border: 2px solid;
+	padding: 12px 34px;
+	display: inline-block;
+	border-radius: 10px;
+  }
+
+.result-col p{
+	color:black;
+	font-size:14px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+}
+
+.row3{
+	width:80%;
+	margin-top:5%;
+	display:flex;
+	justify-content:space-between;
+	margin-left:120px;
+    height: 70vh;
+}
+
+.result-col{
+	flex-basis:31%;
+	background:skyblue;
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	transition:0.5s;
+	overflow-y: scroll;
+}
+
+.result-col h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+	
+}
+
+
+
+
+
+
+/* contact page styles */
+/* Contact section styles */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+	
+}
+
+.contact-form {
+    flex: 1;
+    padding: 30px;
+    background-color: rgb(209, 250, 251);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-left: 10px;
+	border: 1px solid black;
+	text-align: center;
+	align-items: center;
+	height: 252px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.social-box {
+    flex: 0.70;
+    padding: 20px;
+    background-color: rgb(232, 227, 227);
+	border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	height: 272px;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+.social-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+	text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+	
+}
+
+
+
+
+
+
+/* Styles for the registration form */
+.reg1 form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #2851e8;
+    border-radius: 5px;
+	background-color: #98edf7;
+}
+
+.reg1 label {
+    display: block;
+    margin-bottom: 1px;
+}
+
+.reg1 textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.reg1 input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.reg h1{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* Styles for the search bar */
+
+/* Container */
+#search {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+
+
+/* Heading */
+#search h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Input field */
+#searchInput {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Button */
+#search button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Search results */
+#searchResults {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    max-height: 200px;
+    overflow-y: auto;
+	margin-bottom: 300px;
+}
+
+/* Individual search result item */
+#searchResults .result {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Styling for the last search result item to remove the border */
+#searchResults .result:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+/* External CSS for admin login form */
+.adminlog {
+    width: 50%;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fcabab;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-left: 270px;
+}
+
+.adminlog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+
+.adminlog label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.adminlog input[type="text"],
+.adminlog input[type="password"],
+.adminlog input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.adminlog input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.adminlog input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* External CSS for student login form */
+.studentlog {
+    width: 50%;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    padding: 20px;
+    background-color: #edf3a3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-left: 270px;
+}
+
+.studentlog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+
+.studentlog label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.studentlog input[type="text"],
+.studentlog input[type="password"],
+.studentlog input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.studentlog input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.studentlog input[type="submit"]:hover {
+    background-color: #0056b3;
+}
